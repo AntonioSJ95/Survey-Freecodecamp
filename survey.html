@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+ <header class="header">
+  <h1 id="title" class="text-center" >freeCodeCamp Survey Form by Antonio Sein </h1>
+  <p id="description"> This is an exercise that I made to learn more about the basics of HTML5 and CSS</p>
+</header>
+  
+<form id="survey-form">
+  <!---Name--->
+  <div class = "form-group">
+    <label for="name" id="name-label">Name: </label>
+    <input type="text" id="name" name="name"
+    placeholder="Antonio Sein" required>
+  </div>
+
+<!---Email--->
+  <div class = "form-group">
+    <label for="email" id="email-label">Email: </label>
+    <input type="email" id="email" name="email"
+    placeholder="test@test" required>
+  </div>
+
+<!---Number--->
+  <div class = "form-group">
+    <label for="number" id="number-label">Age: </label>
+    <input type="number" id="number" name="number" min="1" max="2" placeholder="27">
+  </div>
+
+<!---Dropdown--->
+  <div class = "form-group"> 
+    <label for="dropdown">Why are you looking this code?</label>
+    <select id="dropdown">
+      <option> I was just looking </option>
+      <option> I want to hire you </option>
+      <option> Want to give you some feedback</option>
+    </select>
+  </div>
+
+<!---Checkbox--->
+  <div class = "form-group"> 
+    <p>
+      What do you think about this survey?
+    </p>
+    
+    <label for="option1">
+      <input type="checkbox" id="option1" name="option1" value="option1" class="input-checkbox"> It is good
+    </label><br>
+    
+    <label for="option1"><input type="checkbox" id="option2" name="option2" value="option2" class="input-checkbox"> It could be better 
+    </label>
+  </div>
+
+<!---Radio--->
+
+<div class = "form-group"> 
+  <p>
+    Are you interested to get in contact?
+  </p>
+  <input type="radio" id="radio1" name="radio1" value="radio1" class="input-radio">
+  <label for="html">Yes</label><br>
+  <input type="radio" id="radio2" name="radio1" value="radio2" class="input-radio">
+  <label for="radio2">No</label><br>
+</div>
+
+  <!---textarea--->
+  <div class = "form-group"> 
+    <label for="textarea"> Leave any review in order to improve my knowledge: </label>
+    <textarea id="textarea" name="textarea" rows="4" cols="50" class="input-textarea" >
+    </textarea>
+  </div>
+
+
+    <input type="submit" id="submit">
+  </form>
+
+  
+    
+</body>
+</html>
